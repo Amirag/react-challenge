@@ -1,0 +1,26 @@
+{
+  "extends": "react",
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true
+  },
+  "globals": {
+    "document": false
+  },
+  "rules": {
+    "indent": ["error", 2],
+    "no-unused-vars": "warn",
+    "linebreak-style": ["error", "unix"],
+    "keyword-spacing": ["error", { "before": true }],
+    "space-before-function-paren": ["error", "never"],
+    "max-len": ["error", { "ignoreRegExpLiterals": true }],
+    "new-cap": 0,
+    "comma-dangle": ["error", {
+      "arrays": "never",
+      "objects": "never",
+      "imports": "never",
+      "exports": "never",
+      "functions": "ignore",
+    }]
+  },
+}

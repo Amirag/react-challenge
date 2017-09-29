@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <% for (var css in htmlWebpackPlugin.files.css) { %><link href="/<%= htmlWebpackPlugin.files.css[css] %>" rel="stylesheet"><% } %>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <noscript>It is necessary to have javascript enabled in order to render the page</noscript>
+    <div id="container"></div>
+    <% for (key in htmlWebpackPlugin.files.js) { %><script type="text/javascript" src="/<%= htmlWebpackPlugin.files.js[key] %>"></script><% } %>
+  </body>
+</html>
